@@ -3,7 +3,7 @@ export interface data {
   value: number
 }
 
-export const datas: data[] = [
+export const lineChartData: data[] = [
   {date: new Date("2010-01-01"), value: 210.73},
   {date: new Date("2010-01-04"), value: 214.01},
   {date: new Date("2010-01-05"), value: 214.38},
