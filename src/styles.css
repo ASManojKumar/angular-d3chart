@@ -28,3 +28,14 @@ h1 {
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
+/*pie chart css*/
+
+.arc text {
+  font-size: 10px;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
