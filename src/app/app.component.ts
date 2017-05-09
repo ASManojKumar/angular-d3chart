@@ -21,6 +21,12 @@ import { Stats } from './shared/pieData';
 export class AppComponent implements OnInit {
 
     title: string = 'D3.js with Angular 2';
+    dataset: any;
+    radius: any;
+    pie: any;
+    color: any;
+    arc: any;
+    labelArc: any;
 
     dropDownList = [{
         id: 1,
@@ -42,7 +48,7 @@ export class AppComponent implements OnInit {
     private line: d3Shape.Line < [number, number] > ;
 
     constructor() {
-
+        
     }
 
     ngOnInit() {
@@ -59,7 +65,7 @@ export class AppComponent implements OnInit {
 
         this.width = 460;
         this.height = 300,
-            this.radius = Math.min(this.width, this.height) / 2;
+        this.radius = Math.min(this.width, this.height) / 2;
 
         let color = d3Scale.scaleOrdinal().range(["#f95f5f", "#015a01", "#fdfd57", "#ADD6FB", "#532455"]);
 
